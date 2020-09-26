@@ -126,29 +126,36 @@ namespace csharp
             // Console.WriteLine("Great your final score is : " + score + " .");
 
             // Eighth Git
-            Console.Write("Input a number between 1 and 5 : ");
-            int num = Convert.ToInt32(Console.ReadLine());
+            // Console.Write("Input a number between 1 and 5 : ");
+            // int num = Convert.ToInt32(Console.ReadLine());
 
-            switch (num){
-                case 1:
-                    Console.WriteLine("One");
-                    break;
-                case 2:
-                    Console.WriteLine("Two");
-                    break;
-                case 3:
-                    Console.WriteLine("Three");
-                    break;
-                case 4:
-                    Console.WriteLine("Four");
-                    break;
-                case 5:
-                    Console.WriteLine("Five");
-                    break;
-                default:
-                    Console.WriteLine("I said between 1 and 5 !");
-                    break;
+            // switch (num){
+            //     case 1:
+            //         Console.WriteLine("One");
+            //         break;
+            //     case 2:
+            //         Console.WriteLine("Two");
+            //         break;
+            //     case 3:
+            //         Console.WriteLine("Three");
+            //         break;
+            //     case 4:
+            //         Console.WriteLine("Four");
+            //         break;
+            //     case 5:
+            //         Console.WriteLine("Five");
+            //         break;
+            //     default:
+            //         Console.WriteLine("I said between 1 and 5 !");
+            //         break;
+            // }
+
+            // Ninth Git
+            for (int i = 1; i <= 10; i++ ){
+                double result = Math.Pow(2, i); // Power of method starting at 2 and to the power of i.
+                Console.WriteLine(i + ". " + result);
             }
+
 
             Console.ReadKey(); // waits for a key input before closing.
         }
