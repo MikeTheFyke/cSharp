@@ -1,0 +1,12 @@
+/Users/mikefyke/webdev/csharp/bin/Debug/netcoreapp3.1/csharp.deps.json
+/Users/mikefyke/webdev/csharp/bin/Debug/netcoreapp3.1/csharp.runtimeconfig.json
+/Users/mikefyke/webdev/csharp/bin/Debug/netcoreapp3.1/csharp.runtimeconfig.dev.json
+/Users/mikefyke/webdev/csharp/bin/Debug/netcoreapp3.1/csharp.dll
+/Users/mikefyke/webdev/csharp/bin/Debug/netcoreapp3.1/csharp.pdb
+/Users/mikefyke/webdev/csharp/obj/Debug/netcoreapp3.1/csharp.csprojAssemblyReference.cache
+/Users/mikefyke/webdev/csharp/obj/Debug/netcoreapp3.1/csharp.AssemblyInfoInputs.cache
+/Users/mikefyke/webdev/csharp/obj/Debug/netcoreapp3.1/csharp.AssemblyInfo.cs
+/Users/mikefyke/webdev/csharp/obj/Debug/netcoreapp3.1/csharp.csproj.CoreCompileInputs.cache
+/Users/mikefyke/webdev/csharp/obj/Debug/netcoreapp3.1/csharp.dll
+/Users/mikefyke/webdev/csharp/obj/Debug/netcoreapp3.1/csharp.pdb
+/Users/mikefyke/webdev/csharp/obj/Debug/netcoreapp3.1/csharp.genruntimeconfig.cache
