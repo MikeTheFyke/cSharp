@@ -60,17 +60,35 @@ namespace csharp
             // }
 
             // Fifth Git
-            double cash;
-            Console.WriteLine("Welcome to the Vitual show!\nTickets cost $5.\nCan you please pay to continue.");
-            cash = Convert.ToDouble (Console.ReadLine());
+            // double cash;
+            // Console.WriteLine("Welcome to the Vitual show!\nTickets cost $5.\nCan you please pay to continue.");
+            // cash = Convert.ToDouble (Console.ReadLine());
+            // if (cash < 5){
+            //     Console.WriteLine("Sorry not enough money, goodbye.");
+            // } else if (cash == 5){
+            //     Console.WriteLine("Great job exact amount, you may proceed.");
+            // } else {
+            //     double change = cash - 5;
+            //     Console.WriteLine("Great job here is you change $" + change + ".");
+            // }
 
-            if (cash < 5){
-                Console.WriteLine("Sorry not enough money, goodbye.");
-            } else if (cash == 5){
-                Console.WriteLine("Great job exact amount, you may proceed.");
-            } else {
-                double change = cash - 5;
-                Console.WriteLine("Great job here is you change $" + change + ".");
+            // Sixth Git
+
+            int age;
+            int height;
+
+            Console.Write("Welcome you the vitual amusment park.\nCan you please input your age ? ");
+            age = Convert.ToInt32 (Console.ReadLine());
+
+            Console.Write("Can you please input your height in cm ? ");
+            height = Convert.ToInt32 (Console.ReadLine());
+
+            if (age >= 18 && height >= 160){
+                Console.WriteLine ("Great Come Aboard !!");
+            } else if (age < 18){
+                Console.WriteLine ("Sorry your not old enough to ride :(");
+            } else if (height < 160){
+                Console.WriteLine ("Sorry you are not tall enough to ride :(");
             }
 
             Console.ReadKey(); // waits for a key input before closing.
