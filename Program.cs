@@ -151,15 +151,28 @@ namespace csharp
             // }
 
             // Ninth Git
-            Console.WriteLine("Please enter a number to start our power of loop at : ");
-            double startNumber = Convert.ToDouble (Console.ReadLine());
-            Console.WriteLine("Please enter the number of times your would like " + startNumber + " to be powered by : ");
-            double powerNumber = Convert.ToDouble (Console.ReadLine());
+            // Console.WriteLine("Please enter a number to start our power of loop at : ");
+            // double startNumber = Convert.ToDouble (Console.ReadLine());
+            // Console.WriteLine("Please enter the number of times your would like " + startNumber + " to be powered by : ");
+            // double powerNumber = Convert.ToDouble (Console.ReadLine());
 
-            for (int i = 1; i <= powerNumber; i++ ){
-                double result = Math.Pow(startNumber, i); // Power of method starting at 2 and to the power of i.
-                Console.WriteLine(i + ". " + result);
+            // for (int i = 1; i <= powerNumber; i++ ){
+            //     double result = Math.Pow(startNumber, i); // Power of method starting at 2 and to the power of i.
+            //     Console.WriteLine(i + ". " + result);
+            // }
+
+            // Tenth Git
+            Random numberGen = new Random();
+
+            int roll = 0;
+            int attempts = 1;
+
+            while (roll!=6){
+                roll = numberGen.Next(1,7); // next function between 1 (inclusive - min) & 7 (exclusive - max)
+                Console.WriteLine(attempts + ". You Rolled a " + roll + ".");
+                attempts++;
             }
+
 
 
             Console.ReadKey(); // waits for a key input before closing.
