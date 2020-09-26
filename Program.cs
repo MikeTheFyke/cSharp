@@ -60,8 +60,19 @@ namespace csharp
             // }
 
             // Fifth Git
+            double cash;
+            Console.WriteLine("Welcome to the Vitual show!\nTickets cost $5.\nCan you please pay to continue.");
+            cash = Convert.ToDouble (Console.ReadLine());
 
-            
+            if (cash < 5){
+                Console.WriteLine("Sorry not enough money, goodbye.");
+            } else if (cash == 5){
+                Console.WriteLine("Great job exact amount, you may proceed.");
+            } else {
+                double change = cash - 5;
+                Console.WriteLine("Great job here is you change $" + change + ".");
+            }
+
             Console.ReadKey(); // waits for a key input before closing.
         }
     }
