@@ -21,8 +21,15 @@ namespace csharp
             // Console.ReadKey();
 
             // Third Git
-            Console.WriteLine("Heloo what is your name ?");
-            string name = "";
+            Console.WriteLine("Hello what is your name ?");
+            string username = Console.ReadLine();
+            Console.WriteLine("Nice to mee you " + username + ". My name is Hal, do you like daisies " + username + " ?");
+            string userAnswer = Console.ReadLine();
+            if (userAnswer == "yes"){
+                Console.WriteLine("Good, perfect answer.");
+            } else {
+                Console.WriteLine("Thats fine, more for me :)");
+            }
         }
     }
 }
