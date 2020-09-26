@@ -90,6 +90,34 @@ namespace csharp
             //     Console.WriteLine ("Sorry you are not tall enough to ride :(");
             // }
 
+            // Seventh Git
+            double answer01 = 16;
+            double userAnswer01;
+            double answer02 = 0;
+            double userAnswer02;
+            double answer03 = 130;
+            double userAnswer03;
+            int score = 0;
+
+            Console.WriteLine("Okay we are here to test you math skills.\n Can you please tell me the answer of the following questions.\n1. What is 8 * 2 ? ");
+            userAnswer01 = Convert.ToDouble (Console.ReadLine());
+            if (userAnswer01 == answer01){
+                score = score + 1;
+                
+            }
+            Console.WriteLine("2. What is Answer01 - 16 ? ");
+            userAnswer02 = Convert.ToDouble (Console.ReadLine());
+            if (userAnswer02 == answer02){
+                score = score + 1;
+            }
+            Console.WriteLine("3. What is 13 with Answer02 on the end ? ");
+            userAnswer03 = Convert.ToDouble (Console.ReadLine());
+            if (userAnswer03 == answer03){
+                score = score + 1;
+            }
+            Console.WriteLine("Great your final score is : " + score + " .");
+
+
             Console.ReadKey(); // waits for a key input before closing.
         }
     }
