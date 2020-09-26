@@ -32,34 +32,36 @@ namespace csharp
             // }
 
             // Fourth Git
-            double num01;
-            double num02;
+            // double num01;
+            // double num02;
+            // string operation;
+            // double result;
 
-            string operation;
+            // Console.Write("Input the first number please : "); // Write instead of writeline waits for answer (ReadLine) on same line.
+            // // num01 = Convert.ToInt32 (Console.ReadLine()); // Convert string input to int or float or double
+            // num01 = Convert.ToDouble (Console.ReadLine());
+            // Console.Write("Input a second number please : "); // Write instead of writeline waits for answer (ReadLine) on same line.
+            // // num02 = Convert.ToInt32 (Console.ReadLine());
+            // num02 = Convert.ToDouble (Console.ReadLine());
+            // Console.Write("Input type of operation please (+ - * /) : ");
+            // operation = Console.ReadLine();
+            // if (operation == "+"){
+            //     result = num01 + num02;
+            //     Console.WriteLine("Your Result is " + result + ".");
+            // } else if (operation == "-")  {
+            //     result = num01 - num02;
+            //     Console.WriteLine("Your Result is " + result + ".");
+            // } else if (operation == "*")  {
+            //     result = num01 * num02;
+            //     Console.WriteLine("Your Result is " + result + ".");
+            // } else if (operation == "/")  {
+            //     result = num01 / num02;
+            //     Console.WriteLine("Your Result is " + result + ".");
+            // }
 
-            double result;
+            // Fifth Git
 
-            Console.Write("Input the first number please : "); // Write instead of writeline waits for answer (ReadLine) on same line.
-            // num01 = Convert.ToInt32 (Console.ReadLine()); // Convert string input to int or float or double
-            num01 = Convert.ToDouble (Console.ReadLine());
-            Console.Write("Input a second number please : "); // Write instead of writeline waits for answer (ReadLine) on same line.
-            // num02 = Convert.ToInt32 (Console.ReadLine());
-            num02 = Convert.ToDouble (Console.ReadLine());
-            Console.Write("Input type of operation please (+ - * /) : ");
-            operation = Console.ReadLine();
-            if (operation == "+"){
-                result = num01 + num02;
-                Console.WriteLine("Your Result is " + result + ".");
-            } else if (operation == "-")  {
-                result = num01 - num02;
-                Console.WriteLine("Your Result is " + result + ".");
-            } else if (operation == "*")  {
-                result = num01 * num02;
-                Console.WriteLine("Your Result is " + result + ".");
-            } else if (operation == "/")  {
-                result = num01 / num02;
-                Console.WriteLine("Your Result is " + result + ".");
-            }
+            
             Console.ReadKey(); // waits for a key input before closing.
         }
     }
