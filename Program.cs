@@ -151,8 +151,13 @@ namespace csharp
             // }
 
             // Ninth Git
-            for (int i = 1; i <= 10; i++ ){
-                double result = Math.Pow(2, i); // Power of method starting at 2 and to the power of i.
+            Console.WriteLine("Please enter a number to start our power of loop at : ");
+            double startNumber = Convert.ToDouble (Console.ReadLine());
+            Console.WriteLine("Please enter the number of times your would like " + startNumber + " to be powered by : ");
+            double powerNumber = Convert.ToDouble (Console.ReadLine());
+
+            for (int i = 1; i <= powerNumber; i++ ){
+                double result = Math.Pow(startNumber, i); // Power of method starting at 2 and to the power of i.
                 Console.WriteLine(i + ". " + result);
             }
 
