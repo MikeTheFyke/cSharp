@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic; // Fourteenth Git to allow usage of lists.
 
 namespace csharp
 {
@@ -209,7 +210,7 @@ namespace csharp
             //     Console.WriteLine(rank + ". " + movies[i]);
             // };
 
-            // Thirteenth Git
+            // Thirteenth Git - Array with set number of indexes.
 
             // string[] movies = new string [4];
 
@@ -230,6 +231,20 @@ namespace csharp
             // for (var i  = 0; i < movies.Length; i++){
             //     Console.WriteLine(movies[i]);
             // };
+
+            // Fourteenth Git
+
+            List<string> shoppingList = new List<string>();
+
+            shoppingList.Add("Shibbles");
+            shoppingList.Add("Fibbles");
+            shoppingList.Add("Gribbles");
+
+            for (var i = 0; i < shoppingList.Count; i++){ // When Working with lists we use Count instead of length.
+                Console.WriteLine(shoppingList[i]);
+            };
+
+            
 
             Console.ReadKey(); // waits for a key input before closing.
         }
