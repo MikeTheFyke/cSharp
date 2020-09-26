@@ -161,24 +161,40 @@ namespace csharp
             //     Console.WriteLine(i + ". " + result);
             // }
 
-            // Tenth Git
+            // Tenth Git - One Dice
+            // Random numberGen = new Random(); 
+
+            // int roll = 0;
+            // int attempts = 1;
+            // Console.WriteLine("Please press enter to roll the die.");
+            // while (roll!=6){
+            //     Console.ReadKey(); // Waits for user to press a key to start the while loop.
+
+            //     roll = numberGen.Next(1,7); // next function between 1 (inclusive - min) & 7 (exclusive - max)
+            //     Console.WriteLine(attempts + ". You Rolled a " + roll + ".");
+            //     attempts++;
+            //     Console.WriteLine("Please press enter to roll the die.");
+            // }
+            // Console.WriteLine("You took " + attempts + " attempts to roll a 6.");
+
+            // Eleventh Git - Two Dice
             Random numberGen = new Random();
 
-            int roll = 0;
-            int attempts = 1;
-
+            int roll01 = 0;
+            int roll02 = 0;
+            int attempts = 0;
             Console.WriteLine("Please press enter to roll the die.");
-
-            while (roll!=6){
+            while (roll01!=6 || roll02!=6){
                 Console.ReadKey(); // Waits for user to press a key to start the while loop.
-
-                roll = numberGen.Next(1,7); // next function between 1 (inclusive - min) & 7 (exclusive - max)
-                Console.WriteLine(attempts + ". You Rolled a " + roll + ".");
                 attempts++;
+                roll01 = numberGen.Next(1,7); // next function between 1 (inclusive - min) & 7 (exclusive - max)
+                roll02 = numberGen.Next(1,7);
+                Console.WriteLine(attempts + ". You Rolled a " + roll01 + ".");
+                Console.WriteLine(attempts + ". You Rolled a " + roll02 + ".");
                 Console.WriteLine("Please press enter to roll the die.");
             }
+            Console.WriteLine("You took " + attempts + " attempts to roll double 6's.");
 
-            Console.WriteLine("You took " + attempts + " attempts to roll a 6.");
 
             Console.ReadKey(); // waits for a key input before closing.
         }
