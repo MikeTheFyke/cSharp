@@ -103,17 +103,25 @@ namespace csharp
             userAnswer01 = Convert.ToDouble (Console.ReadLine());
             if (userAnswer01 == answer01){
                 score = score + 1;
-                
+                Console.WriteLine("Correct !");
+            } else {
+                Console.WriteLine("Great job but wrong dumbass.");
             }
             Console.WriteLine("2. What is Answer01 - 16 ? ");
             userAnswer02 = Convert.ToDouble (Console.ReadLine());
             if (userAnswer02 == answer02){
                 score = score + 1;
+                Console.WriteLine("Correct !");
+            } else {
+                Console.WriteLine("Great job but wrong dumbass.");
             }
             Console.WriteLine("3. What is 13 with Answer02 on the end ? ");
             userAnswer03 = Convert.ToDouble (Console.ReadLine());
             if (userAnswer03 == answer03){
                 score = score + 1;
+                Console.WriteLine("Correct !");
+            } else {
+                Console.WriteLine("Great job but wrong dumbass.");
             }
             Console.WriteLine("Great your final score is : " + score + " .");
 
