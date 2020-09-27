@@ -6,10 +6,16 @@ namespace csharp
 
     class Jedi  // Nineteenth git
     {
-        public string name;
+        public string name; // public allows us to access and modify value outside of the class, private does not.
         public string forceAbility;
-        public int forcePower;
-        public float experience;
+
+        // public int forcePower;
+        private int forcePower;
+
+        // public float experience;
+        private float experience;
+
+        public static int Count; // created a public static variable
 
         public Jedi(string _name, string _forceAbility)
         {
@@ -17,6 +23,8 @@ namespace csharp
             forceAbility = _forceAbility;
             forcePower = 2;
             experience = 0f;
+
+            Count++;
         }
 
         public void useForce()
@@ -367,9 +375,12 @@ namespace csharp
             // jedi01.forcePower = 3;
             // jedi01.experience = 0f;
 
+            Jedi jedi02 = new Jedi("Abusheeh Kam", "Force Lightning");
             
-            
+            Console.WriteLine("We currently have " + Jedi.Count + " Jedi in the arena."); // added to test static public Count variable.
+
             jedi01.useForce();
+            jedi02.useForce();
 
             jedi01.forceMeditate();
             // Console.WriteLine(jedi01.name + " currently has " + jedi01.forcePower + " force power available.");
