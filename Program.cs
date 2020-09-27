@@ -256,29 +256,44 @@ namespace csharp
 
             // Fifteenth Git
 
-            List<string> passengerList = new List<string>();
+            // List<string> passengerList = new List<string>();
 
-            Console.Write("How many people are going to the moon : ");
-            int numPeople = Convert.ToInt32 (Console.ReadLine());
-            Console.WriteLine("There are " + numPeople + " going to the moon today.");
+            // Console.Write("How many people are going to the moon : ");
+            // int numPeople = Convert.ToInt32 (Console.ReadLine());
+            // Console.WriteLine("There are " + numPeople + " going to the moon today.");
 
-            Console.WriteLine("What are the passengers names ? ");
-            for (var i = 0; i < numPeople; i++){
-                int rank = i + 1;
-                Console.Write(rank + ". ");
-                passengerList.Add(Console.ReadLine());
-            };
+            // Console.WriteLine("What are the passengers names ? ");
+            // for (var i = 0; i < numPeople; i++){
+            //     int rank = i + 1;
+            //     Console.Write(rank + ". ");
+            //     passengerList.Add(Console.ReadLine());
+            // };
 
-            passengerList.Sort(); // Sort method when using Lists
+            // passengerList.Sort(); // Sort method when using Lists
 
-            Console.WriteLine("---------------Here is a List of Passengers Alphabetically.---------------");
+            // Console.WriteLine("---------------Here is a List of Passengers Alphabetically.---------------");
 
-            for (var i = 0; i < numPeople; i++){
-                int rank = i + 1;
-                Console.WriteLine(rank + ". " + passengerList[i]);
-            };
+            // for (var i = 0; i < numPeople; i++){
+            //     int rank = i + 1;
+            //     Console.WriteLine(rank + ". " + passengerList[i]);
+            // };
+
+            // Sixteenth Git - Creating Methods (functions) - MeetAlien
+
+            MeetAlien();
+            Console.WriteLine("---");
+            MeetAlien();
+            Console.WriteLine("---");
+            MeetAlien();
 
             Console.ReadKey(); // waits for a key input before closing.
         }
+        static void MeetAlien(){ // Created for Sixteenth Git - 
+            Random numberGen = new Random();
+            string name = "X-" + numberGen.Next(20, 9999);
+            int age = numberGen.Next(18, 500);
+            Console.WriteLine("Hi, I'm " + name + ".\nI'm " + age + " solar cycles old.\nOh and it looks like you are an alien ;)\nI'm really into that.");
+        }
+
     }
 }
