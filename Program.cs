@@ -232,19 +232,27 @@ namespace csharp
             //     Console.WriteLine(movies[i]);
             // };
 
-            // Fourteenth Git
+            // Fourteenth Git - List Array notice the added 'using System.Collections.Generic;' at top of page.
 
             List<string> shoppingList = new List<string>();
 
             shoppingList.Add("Shibbles");
             shoppingList.Add("Fibbles");
             shoppingList.Add("Gribbles");
+            shoppingList.Add("Dribbles");
 
             for (var i = 0; i < shoppingList.Count; i++){ // When Working with lists we use Count instead of length.
                 Console.WriteLine(shoppingList[i]);
             };
 
-            
+            shoppingList.Remove("Fibbles"); // Removes list item by value
+            shoppingList.RemoveAt(2); // Removes list item by indices.
+
+            Console.WriteLine("Your new list");
+
+            for (var i = 0; i < shoppingList.Count; i++){
+                Console.WriteLine(shoppingList[i]);
+            };
 
             Console.ReadKey(); // waits for a key input before closing.
         }
