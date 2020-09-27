@@ -280,19 +280,35 @@ namespace csharp
 
             // Sixteenth Git - Creating Methods (functions) - MeetAlien
 
-            MeetAlien();
-            Console.WriteLine("---");
-            MeetAlien();
-            Console.WriteLine("---");
-            MeetAlien();
+            // MeetAlien();
+            // Console.WriteLine("---");
+            // MeetAlien();
+            // Console.WriteLine("---");
+            // MeetAlien();
+
+            // Seventeenth Git - Multiply Method with a return 'result' back to main.
+
+            int newResult = Multiply(3, 3); // can be same or not of what is returned from method
+            Console.WriteLine("The result is " + newResult);
+
+            if (newResult % 2 == 0){ // modulous % sign
+                Console.WriteLine(newResult + " is an even number.");
+            } else {
+                Console.WriteLine(newResult + " is not an even number.");
+            }
 
             Console.ReadKey(); // waits for a key input before closing.
         }
-        static void MeetAlien(){ // Created for Sixteenth Git - 
-            Random numberGen = new Random();
-            string name = "X-" + numberGen.Next(20, 9999);
-            int age = numberGen.Next(18, 500);
-            Console.WriteLine("Hi, I'm " + name + ".\nI'm " + age + " solar cycles old.\nOh and it looks like you are an alien ;)\nI'm really into that.");
+        // static void MeetAlien(){ // Created for Sixteenth Git - 
+        //     Random numberGen = new Random();
+        //     string name = "X-" + numberGen.Next(20, 9999);
+        //     int age = numberGen.Next(18, 500);
+        //     Console.WriteLine("Hi, I'm " + name + ".\nI'm " + age + " solar cycles old.\nOh and it looks like you are an alien ;)\nI'm really into that.");
+        // }
+        static int Multiply (int num01, int num02){ // Seventeeth Git - void is changed to what we want to return from this method 'int'.
+            int result = num01 * num02;
+            // Console.WriteLine("The result is: " + result); // when void is used we display through the method.
+            return result; // with 'static int' in the head of this method we can return 'result' to our main.
         }
 
     }
