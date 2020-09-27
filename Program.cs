@@ -3,6 +3,39 @@ using System.Collections.Generic; // Fourteenth Git to allow usage of lists.
 
 namespace csharp
 {
+
+    class Jedi  // Nineteenth git
+    {
+        public string name;
+        public string forceAbility;
+        public int forcePower;
+        public float experience;
+
+        public void useForce()
+        {
+            if (forcePower > 0){
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\n" + name + " uses " + forceAbility + " .");
+                forcePower--; // everytime the force is used forcedpower is decreased. 
+                experience += 0.3f;  
+                Console.ForegroundColor = ConsoleColor.White; 
+            } else {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine(name + " does not have enough force power available.");
+                Console.ForegroundColor = ConsoleColor.White; 
+            }
+
+        }
+
+        public void forceMeditate()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(name + " meditates to regain connection with the force.");
+            forcePower += 2;
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -299,13 +332,29 @@ namespace csharp
 
             // Eighteenth Git - Word Splitter Challenge
 
-            Console.WriteLine("Please enter a sentence to split.");
-            string sentence = Console.ReadLine();
+            // Console.WriteLine("Please enter a sentence to split.");
+            // string sentence = Console.ReadLine();
 
-            int wordCount = Splitter(sentence);
+            // int wordCount = Splitter(sentence);
 
-            Console.WriteLine("There are " + wordCount + " words in your sentence.");
+            // Console.WriteLine("There are " + wordCount + " words in your sentence.");
 
+            // Nineteenth Git
+
+            Jedi jedi01 = new Jedi();
+            jedi01.name = "Miku Fyku";
+            jedi01.forceAbility = "Force Choke";
+            jedi01.forcePower = 3;
+            jedi01.experience = 0f;
+            
+            jedi01.useForce();
+            Console.WriteLine(jedi01.name + " currently has " + jedi01.forcePower + " force power available.");
+            Console.WriteLine(jedi01.name + " has gained " + jedi01.experience + " force experience.\n");
+
+            jedi01.forceMeditate();
+            Console.WriteLine(jedi01.name + " currently has " + jedi01.forcePower + " force power available.");
+            Console.WriteLine(jedi01.name + " has gained " + jedi01.experience + " force experience.\n");
+            
             Console.ReadKey(); // waits for a key input before closing.
         }
         // static void MeetAlien(){ // Created for Sixteenth Git - 
@@ -321,10 +370,10 @@ namespace csharp
         //     return result; // with 'static int' in the head of this method we can return 'result' to our main.
         // }
 
-        static int Splitter (string sentence){
-            int counted = sentence.Split(' ').Length;
-            return counted;
-        }
+        // static int Splitter (string sentence){ // Eighteenth Git
+        //     int counted = sentence.Split(' ').Length;
+        //     return counted;
+        // }
 
     }
 }
