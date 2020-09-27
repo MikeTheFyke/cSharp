@@ -234,24 +234,48 @@ namespace csharp
 
             // Fourteenth Git - List Array notice the added 'using System.Collections.Generic;' at top of page.
 
-            List<string> shoppingList = new List<string>();
+            // List<string> shoppingList = new List<string>();
 
-            shoppingList.Add("Shibbles");
-            shoppingList.Add("Fibbles");
-            shoppingList.Add("Gribbles");
-            shoppingList.Add("Dribbles");
+            // shoppingList.Add("Shibbles");
+            // shoppingList.Add("Fibbles");
+            // shoppingList.Add("Gribbles");
+            // shoppingList.Add("Dribbles");
 
-            for (var i = 0; i < shoppingList.Count; i++){ // When Working with lists we use Count instead of length.
-                Console.WriteLine(shoppingList[i]);
+            // for (var i = 0; i < shoppingList.Count; i++){ // When Working with lists we use Count instead of length.
+            //     Console.WriteLine(shoppingList[i]);
+            // };
+
+            // shoppingList.Remove("Fibbles"); // Removes list item by value
+            // shoppingList.RemoveAt(2); // Removes list item by indices.
+
+            // Console.WriteLine("Your new list");
+
+            // for (var i = 0; i < shoppingList.Count; i++){
+            //     Console.WriteLine(shoppingList[i]);
+            // };
+
+            // Fifteenth Git
+
+            List<string> passengerList = new List<string>();
+
+            Console.Write("How many people are going to the moon : ");
+            int numPeople = Convert.ToInt32 (Console.ReadLine());
+            Console.WriteLine("There are " + numPeople + " going to the moon today.");
+
+            Console.WriteLine("What are the passengers names ? ");
+            for (var i = 0; i < numPeople; i++){
+                int rank = i + 1;
+                Console.Write(rank + ". ");
+                passengerList.Add(Console.ReadLine());
             };
 
-            shoppingList.Remove("Fibbles"); // Removes list item by value
-            shoppingList.RemoveAt(2); // Removes list item by indices.
+            passengerList.Sort(); // Sort method when using Lists
 
-            Console.WriteLine("Your new list");
+            Console.WriteLine("---------------Here is a List of Passengers Alphabetically.---------------");
 
-            for (var i = 0; i < shoppingList.Count; i++){
-                Console.WriteLine(shoppingList[i]);
+            for (var i = 0; i < numPeople; i++){
+                int rank = i + 1;
+                Console.WriteLine(rank + ". " + passengerList[i]);
             };
 
             Console.ReadKey(); // waits for a key input before closing.
